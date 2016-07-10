@@ -1,0 +1,670 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Dall'Atlante della Laguna all'MSP: esperienze di data management in sistemi standard aperti.</title>
+
+		<link rel="stylesheet" href="../reveal.js-master/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js-master/css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal.js-master/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js-master/css/print/pdf.css' : '../reveal.js-master/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					  <h3>Dall'Atlante della Laguna all'MSP: esperienze di data management in sistemi standard aperti.</h3>
+					  <p>&nbsp; </p>
+						<p>Alessandro Sarretta <br>
+							e Stefano Menegon</p>
+					  <p>&nbsp; </p>
+				    <p>CNR - Istituto di Scienze Marine</p>
+					  <br>
+					  <p><small>Consiglio d'Istituto ISMAR - Bologna, 5 Luglio 2016</small></p>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+					  <h2>Il filo rosso</h2>
+					  <svg id="filo_rosso" height="150" width="800"
+					       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+					    <image x="0" y="0" height="150" width="800"  xlink:href="img/fil_rouge.svg" />
+					  </svg>
+					  <p>Percorso che si snoda dal 2006 ad oggi</p>
+					  <p>Da una rete informale di ricercatori,
+					    tecnici e professionisti ad un modello cooperativo formalizzato (middle-out)
+					  </p>
+					  <ul>
+					    <li><span class="blue">Open science</span> (risultati delle ricerche, dati, software),</li>
+					    <li><span class="blue">Interoperabilità e standard</span></li>
+					    <li><span class="blue">Comunicazione della conoscenza scientifica</span></li>
+					    <li><span class="blue">Environmental & geospatial data</span>
+					    </ul>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+	        <section>
+	          <h3>L'Atlante della Laguna - Contesto</h3>
+	          <ul>
+							<li>Complessità ambientale
+							<li>Complessità del quadro normativo
+							<li>Complessità e sovrapposizione degli strumenti di monitoraggio e di gestione
+							<li>Complessità e sovrapposizione dell'assetto della ricerca scientifica ambientale
+						</ul>
+						<p>
+						<img height="130" src="img/enti.png" alt="Enti"/>
+						<img height="130" src="img/laguna_sistema.png" alt="Attori"/>
+		  			<img height="130" src="img/acqua_alta.jpg" alt=""/>
+						<img height="130" src="img/sito_bonifica.png" alt="SIN Porto Marghera"/>
+					  </p>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+
+						<section>
+						  <h2>Gli inizi</h2>
+						  <p>Gennaio 2006 - Atlante della laguna: il libro!</p>
+						  <img width="350" src="img/atlante_libro.jpg"/>
+						  <p><small>Su iniziativa dell'Osservatorio della Laguna e del Territorio del Comune di Venezia<br>
+						  a cura di S. Guerzoni, D. Tagliapietra (CNR-ISMAR)</small></p>
+						</section>
+
+						<!-- *********************************************************************** -->
+
+						<section>
+						  <img width="220" src="img/atlante_libro.jpg"/>
+						  <ul>
+								<li>Raccolta di 103 tavole che descrivono le caratteristiche ambientali della laguna di Venezia e della relativa zona costiera rivolto ad un pubblico il più eterogeneo possibile.
+								<li>Scopo: promuovere un approccio interdisciplinare alle tematiche ambientali facilitando lo scambio di informazioni tra comunità scientifica e società.
+						  </ul>
+						</section>
+
+					</section>
+
+					<!-- *********************************************************************** -->
+
+				        <section>
+				          <h3>Evoluzione del supporto</h3>
+					  <table>
+					    <tr>
+					      <td>
+						<img height="70" src="img/atlanteLibro.png"
+						     alt="Atlante" class="logo2"/>
+					      </td>
+					      <td  style="vertical-align: middle;">
+						Atlante della Laguna (2006)
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+						<img style="" height="70" src="img/SIL1.png"
+				                     alt="Visualizzatore" class="logo2"/>
+					      </td>
+					      <td  style="vertical-align: middle;">
+						Atlante della Laguna on line (2007): libro cartaceo sul web
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+						<img height="70" src="img/SIL2.png"
+				                     alt="SIL" class="logo2"/>
+					      </td>
+					      <td  style="vertical-align: middle;">
+						Sistema Informativo della Laguna (2008): tecnologia p.mapper/Drupal, WebGIS, mappe interattive
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+						<img height="80" src="img/cignoScreen.png"
+				                     alt="CIGNo" class="logo2"/>
+					      </td>
+					      <td  style="vertical-align: middle;">
+						CIGNo (2011): tecnologia GeoNode/Drupal, interoperabilità, sistema federato, modello collaborativo
+					      </td>
+					    </tr>
+					  </table>
+				        </section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+					  <h3>Evoluzione del network / partners</h3>
+					  <ul>
+					    <li>Comune di Venezia – Assessorato Ambiente (2006)</li>
+					    <li>ISMAR (dal 2009)</li>
+					    <li>Ministero Ambiente – Geoportale Nazionale (2009)</li>
+					    <li>CORILA; IVSLA; Istituzione Parco della Laguna (2011)</li>
+					    <li>Istituzione Bosco e Grandi Parchi (2012)</li>
+					    <li>Provveditorato alle Opere Pubbliche - ex. MAV; Regione Veneto; ARPAV; Museo di Storia Naturale di Venezia; Consiglio di Bacino Laguna di Venezia (2013)</li>
+					    <li>Centro Previsione e Segnalazione Maree (2014)</li>
+				            <img height="50" src="img/ismar-logo.jpg" alt=""/>
+				            <img height="50" src="img/corila-logo.gif" alt=""/>
+				            <img height="50" src="img/comune-logo.gif" alt=""/>
+				            <img height="50" src="img/osservatorio-logo.png" alt=""/>
+				            <img height="50" src="img/regione-logo.png" alt=""/>
+				            <img height="50" style="background-color: white !important;" src="img/mav-logo.gif" alt=""/>
+
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+					  <h3>Collaborazioni informali</h3>
+					  <ul>
+					    <li>International Coastal Atlas Network (ICAN)</li>
+					    <li>Crew  Earth Observations, Image Science & Analysis Laboratory, NASA Johnson Space Center, USA</li>
+					    <li>IUAV</li>
+					    <li>Università di Padova</li>
+					    <li>Università Ca’ Foscari – Dip. Scienze Ambientali</li>
+					    <li>Soprintendenza ai Beni Architettonici e Paesaggistici di Venezia e laguna (partenariato in itinere)</li>
+					  </ul>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+					  <h3>Progetti connessi</h3>
+					  <small><b>SIPLAN</b> - Sistema Informativo per l'interoperabilità dei dati sulla pianificazione urbanistica e territoriale del Sito Unesco "Venezia e la sua laguna"</small>
+				   	  <img  height="50" src="img/logo_siplan.gif" alt=""/><br>
+					  <small><b>RITMARE SP7</b>: Infrastruttura interoperabile per il progetto
+				   	  Ritmare. Sviluppo dello StarterKit</small><br>
+				   	  <img style="background-color: white;" height="50"
+				   	  src="img/logo.png" alt=""/><br>
+					  <small><b>ADRIPLAN</b> - ADRiatic Ionian maritime spatial PLANning</small><br>
+				   	  <img  height="50" src="img/adriplan_logo.png" alt=""/>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+						<section>
+						  <h3>I contenuti</h3>
+		          <img height="300" src="img/home_atlante.png" /> -->
+						  <p>Alcuni numeri:
+						    <span class="blue">11 Categorie tematiche</span>,
+						    <span class="green">443 Strati informativi (layer)</span>,
+						    <br/>
+						    <span class="red">53 Mappe (aggregazione di layer)</span>,
+						    <span class="blue">2500 Utenti/mese</span>
+						  </p>
+						  <small><a href="http://www.atlantedellalaguna.it">www.atlantedellalaguna.it</a></small>
+  					</section>
+						<section>
+							<iframe id="if_atlante" width="100%" height="600px" frameBorder="0" src="http://www.atlantedellalaguna.it/"></iframe>
+							<small><a href="http://www.atlantedellalaguna.it/">http://www.atlantedellalaguna.it/</a></small>
+						</section>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+					  <h3>Batimetria 2002 (MAV)</h3>
+				          <img height="550" src="img/batimetria_mav.png" />
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+
+						<section>
+						  <h3>Simulazione della marea e delle correnti della laguna in tempo reale</h3>
+					          <img height="450" src="img/shyfem_intro.png" />
+						  <p><small>Modello Open Source SHYFEM. Realizzazione M. Bajo, S. Menegon, A. Vianello</small></p>
+						</section>
+
+						<section data-state="t10">
+						  <h3>Workflow della simulazione</h3>
+						  <img height="550" src="img/pipeline_shyfem.gif" alt="" style="padding: 20px;"/>
+						</section>
+
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section data-state="t10">
+					  <h3>Foto NASA dalla Stazione Spaziale Internazionale</h3>
+						<small><a href="http://cigno.atlantedellalaguna.it/maps/17/view">http://cigno.atlantedellalaguna.it/maps/17/view</a></small><br>
+						<img height="400" src="img/repubblica_iss.png" alt=""/>
+						<small>Image courtesy of the Earth Science and Remote Sensing Unit, NASA Johnson Space Center (<a href="http://eol.jsc.nasa.gov">http://eol.jsc.nasa.gov</a>)</small>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+					<section>
+					  <h3>Verso un quadro di conoscenze condivise</h3>
+				   	  <img height="570" src="img/schema_quadro_conoscenze_condivise.png" alt=""/>
+					</section>
+
+					<!-- *********************************************************************** -->
+
+
+					<section>
+						<section>
+							<h3>CIGNo</h3>
+							<h4>Collaborative Interoperable Geographic Node</h4>
+							<small><a href="http://cigno.ve.ismar.cnr.it">http://cigno.ve.ismar.cnr.it</a></small>
+						  <img height="430" src="img/CIGNo_home.png" alt="Home page CIGNo"/>
+							<small><a href="http://cigno.ve.ismar.cnr.it">http://cigno.ve.ismar.cnr.it</a></small>
+						</section>
+						<section>
+							<iframe id="if_CIGNo" width="100%" height="600px" src="http://cigno.ve.ismar.cnr.it/"></iframe>
+						</section>
+  				</section>
+
+					<section>
+						<section>
+							<h3>BSA - Biblioteca degli Studi Adriatici</h3>
+							<small><a href="http://cigno.ve.ismar.cnr.it/bsa/">http://cigno.ve.ismar.cnr.it/bsa/</a></small>
+							<img height="450" src="img/BSA_home.png" alt="Home page BSA"/>
+						</section>
+
+						<section>
+							<h3>L'evoluzione morfologica della laguna dal XVI secolo ad oggi</h3>
+										<img height="450" src="img/evoluzione_morfologica2.png" />
+							<p><small>Ricerca e analisi: Luigi D'Alpaos (UniPD)</small></p>
+						</section>
+
+						<section>
+							<h3>Map Swipe tool</h3>
+							<small><a href="http://cigno.ve.ismar.cnr.it/bsa/tools">http://cigno.ve.ismar.cnr.it/bsa/tools</a></small>
+							<img height="430" src="img/BSA_MapSwipe.png" alt="Map Swipe tool"/>
+						</section>
+
+						<section>
+							<iframe id="if_mapswipe" width="1200px" height="500px" frameBorder="0" src="http://cigno.ve.ismar.cnr.it/bsa/tools/"></iframe>
+						</section>
+
+				  </section>
+
+
+<!-- ------------------------------------------------------------------------ -->
+
+					<section>
+					    <h3>Il progetto ADRIPLAN</h3>
+					    <div style="float: left; width: 30%;">
+					        <img style="width: 100%" src="img/adriplan_partners.png" alt=""/>
+					    </div>
+					    <div style="float: right; width: 70%;">
+					        <ul>
+					            <li>EU funded project to develop MSP in the Adriatic-Ionian Macroregion</li>
+					            <li>December 2013 - July 2015</li>
+					            <li>Transboundary (4 countries: Croatia, Italy, Slovenia, Greece), 8 Scientific Partners and 9 Institutional Partners, 17 observers</li>
+					        </ul>
+					    </div>
+					    <ul>
+					        <li>An integrated and collaborative web-infrastructure for publishing, sharing and processing scientifc data</li>
+					        <li>Actually, the infrastructure and MSP tools are currently under further development</li>
+					    </ul>
+
+					    <p><a href="http://www.adriplan.eu">www.adriplan.eu</a></p>
+					    <aside class="notes">
+					    </aside>
+					</section>
+
+					<section>
+					    <h3>1 - Adriplan Data Portal</h3>
+					    <img style="height: 230px;" src="img/adriplan_data_portal.png" alt=""/>
+					    <img style="height: 230px;" src="img/architecture_zoom1.png" alt=""/>
+					    <ul>
+					        <li>GeoNode fork: GeoDjango, OWSlib, PyCSW, GeoServer</li>
+					        <li>Geospatial data storage / archiving, discovering, sharing</li>
+					        <li>Interoperable services: collaborative SDI</li>
+					        <li>Granular permissions system</li>
+					        <li>Interactive mapping</li>
+					    </ul>
+					    <a href="http://data.adriplan.eu">http://data.adriplan.eu</a>
+					</section>
+
+					<section>
+					    <h3>1 - Adriplan Data Portal</h3>
+					    <ul>
+					        <li>322 layers (geospatial datasets - raster + vector) </li>
+					        <li>113 maps (combination of layers)</li>
+					        <li>Deal with external OGC-services through "Remote services" functionality</li>
+					    </ul>
+					    <img style="height: 230px;" src="img/network.png" alt=""/>
+					</section>
+
+					<section>
+							<img style="height: 100%;" src="img/architecture.png" alt="Architettura"/>
+							<aside class="notes">
+					        Schema utilizzando per ADRIPLAN ma in realtà è un approccio abbastanza generale
+					    </aside>
+					</section>
+
+					<section>
+					</section>
+
+  				<section>
+					    <h3>2 - MSPTools</h3>
+					    <ul>
+					        <li>GeoNode plugin (python)</li>
+					        <li>Direct interaction with stored data</li>
+					        <li>The users can build several scenarios (called Case Studies) by choosing the analysis area, the data layers, the analysis grid cell</li>
+					        <li>The output includes: geographical layers, raw data,
+					            base statistics and graphs</li>
+					        <li>The spatial outputs from each run are automatically saved and
+					            published through the portal</li>
+					    </ul>
+					    <aside class="notes">
+					        Case Study concept. It allows users to configure a
+					        simulation through a graphical interface: to choose the area
+					        of analysis, the grid cell size (hexagonal grid), to define
+					        the geographical resources (layers) to be used to model the
+					        different phenomena which can be, depending on the context,
+					        uses and activities or environmental components.  Each user
+					        can create more "Case Studies" and compare the results.
+
+					        The outputs from each run on “Case Studies” are
+					        automatically saved as “geographical layers” and published
+					        through the portal. The layer created is initially
+					        accessible only for admin users but it is possible to modify
+					        the access rules to allow the access also for other
+					        registered or non-registered users.
+
+					        For each "Case Study" a summary page is available that lists
+					        general information (e.g.  cells number, total score). In
+					        the next semester this information will be integrated with
+					        graphs and statistics automatically generated starting from
+					        the results of analyses.
+					    </aside>
+					</section>
+
+					<section>
+					    <h3>MSPTools - Cumulative impact</h3>
+					    <p>
+					        Identify areas in the marine space where the environmental
+					        components are more exposed to anthropogenic pressures
+					    </p>
+
+					    <ul>
+					        <li>Activities and uses (e.g. Maritime transport) </li>
+					        <li>Environmental components (e.g. Marine mammals)</li>
+					        <li>Pressures (e.g. Underwater noise)</li>
+					        <li>Sensitivities: the sensitivity of each environmental component to each pressure generated by a maritime use</li>
+					    </ul>
+					    <p><small>firstly introduced by Halpern et al. (2008) at global
+					        scale, then implemented in several Marine Regions
+					        (Mediterranean by Micheli et al. (2013), Baltic Sea by
+					        (Korpinen et al., 2013), and North Sea (Andersen et al., 2013)).
+					        </small></p>
+					</section>
+
+					<section>
+					    <img style="height: 100%;" src="img/cumulative_impact_schema.png" alt="Cumulative Impact schema"/>
+							<aside class="notes">
+					    </aside>
+					</section>
+
+					<section>
+					</section>
+
+					<section>
+					    <h3>3 - Analysis, Rapid prototyping</h3>
+					    <div style="float: left; width: 33%;">
+					        <img style="height: 500px" src="img/jupyter_inputs.png" alt=""/>
+					    </div>
+					    <div style="float: left; width: 33%;">
+					        <img style="height: 500px" src="img/jupyter.png" alt=""/>
+					    </div>
+					    <div style="float: right; width: 33%;">
+					        <img style="height: 500px;" src="img/jupyter_maps.png" alt=""/>
+					    </div>
+					    <p>Jupyter notebook, reusable ".ipynb" files</p>
+					</section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+					<section>
+						<h2>Elementi in comune</h2>
+						<svg id="filo_rosso" height="150" width="800"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+							<image x="0" y="0" height="150" width="800"  xlink:href="img/fil_rouge.svg" />
+						</svg>
+						<ul>
+							<li>Standard e interoperabilità
+							<li>Ambienti collaborativi
+							<li>Software open source
+							<li>Infrastruttura IT
+						</ul>
+					</section>
+
+					<section>
+						<section>
+							<h3>Gestione dati a Venezia</h3>
+							<img style="height:500px;" src="img/server.jpg" alt=""/>
+							<small>Photo by <a href="https://www.flickr.com/photos/stars6/">Leonardo Rizzi</a>: <a href="https://www.flickr.com/photos/stars6/4381851322/">https://www.flickr.com/photos/stars6/4381851322/</a></small>
+						</section>
+						<section>
+								<ul>
+									<li>sala server
+									<li>cluster di processing
+									<li>storage
+									<li>server virtuali (CIGNo, GET-it, THREDDS)
+									<li>testing di altri servizi:
+										<ul>
+											<li>Owncloud
+											<li>Etherpad
+											<li>Discourse
+										</ul>
+								</ul>
+								<br>
+								<img style="height:150px;" src="img/owncloud.png" alt="Owncloud"/>
+								<img style="height:150px;" src="img/etherpad.png" alt="Etherpad"/>
+								<img style="height:150px;" src="img/discourse.png" alt="Discourse"/>
+					 	</section>
+			 		</section>
+
+
+					<section>
+
+						<section>
+						  <h2>Perché Open Software?</h2>
+						  <ul>
+						    <li>Prodotto della ricerca scientifica
+						    <li>Computational Science
+					    <img height="100" src="img/adriplan.png" alt=""/>
+						    <li>Modello di sviluppo collaborativo (strumenti, modelli concettuali)
+								<li>Preservazione e riproducibilità (papers, data, software)
+						  </ul>
+						</section>
+
+						<section>
+						  <h2>Free/Libre/Open Source Software (FLOSS)</h2>
+						  <blockquote>
+						    "Free software" is a matter of liberty, not price. To understand the concept, you should think of "free" as in "free speech", not as in "free beer"
+						  </blockquote>
+						  <p><small>Richard M. Stallman</small></p>
+
+						  <blockquote>
+						    Given enough eyeballs, all bugs are shallow
+						  </blockquote>
+						  <p><small>Eric Raymond - Linus's Law</small></p>
+						</section>
+
+						<section>
+						  <h2>L'elemento innovativo</h2>
+						  <h3>Copyright - Copyleft</h3>
+						  <img src="img/copyright.png" width="100" style="background-color: #ffffff;">
+						  <img src="img/copyleft.png" width="100" style="background-color: #ffffff;">
+						  <ol>
+						    <li>Libertà di eseguire il programma per qualsiasi scopo
+						    <li>Libertà di studiare il programma e modificarlo
+						    <li>Libertà di ridistribuire copie del programma in modo da aiutare il prossimo
+						    <li>Libertà di migliorare il programma e di distribuirne pubblicamente i miglioramenti, in modo tale che tutta la comunità ne tragga beneficio
+						  </ol>
+						</section>
+
+						<section>
+						  <h3>GitHub</h3>
+						  <p>Social tools e nuovi modelli per lo sviluppo del software Open Source</p>
+					   	  <img height="300" src="img/github.png" alt=""/>
+						  <blockquote>Trasparenza delle interazioni all'interno delle comunità</blockquote>
+						</section>
+
+					</section>
+
+					<section>
+						<section>
+						    <h3>Version Control System</h3>
+						    <p>The long history: cvs, svn, mercurial, <span class="red">git</span></p>
+						        <img height="300" src="img/versions.svg" alt=""/>
+						        <img height="300" src="img/merge.svg" alt=""/>
+						    <ul>
+						        <li>records changes over time</li>
+						        <li>you can recall specific versions later</li>
+						        <li>lets multiple users simultaneously edit their own copies</li>
+						        <li>strategies: merging and conflict resolutions</li>
+						    </ul>
+						    <aside class="notes">
+
+						        Nothing that is committed to version control is ever
+						        lost. Since all old versions of files are saved, it’s always
+						        possible to go back in time to see exactly who wrote what on a
+						        particular day, or what version of a program was used to
+						        generate a particular set of results.
+
+						        As we have this record of who made what changes when, we know
+						        who to ask if we have questions later on, and, if needed it,
+						        revert to a previous version, much like the “undo” feature in
+						        an editor.
+
+						        When several people collaborate in the same project, it’s
+						        possible to accidentally overlook or overwrite someone’s
+						        changes: the version control system automatically notifies
+						        users whenever there’s a conflict between one person’s work
+						        and another’s.
+
+
+						    </aside>
+						</section>
+
+						<section>
+						    <img height="600" src="img/phd.gif" alt="" style="float: left;"/>
+						    <img height="180" src="img/enwiki.png" alt="" style="background-color: white;"/>
+						    <img height="180" src="img/google_drive.png" alt="" />
+						    <img height="100" src="img/authorea.png" alt="" style="background-color: white;"/>
+						    <img height="20" src="img/sharelatex.png" alt="" style="background-color: white;"/>
+						    <aside class="notes">
+						        And Version control systems are essential for any form of
+						        distributed, collaborative development.
+						    </aside>
+						</section>
+					</section>
+
+				<section>
+				    <img height="370" src="img/reproducibility_spectrum.jpg" alt=""/>
+				    <small>Roger D. Peng, Reproducible Research in Computational Science, Science, 2011</small>
+				    <small><a href="http://www.sciencemag.org/content/334/6060/1226">http://www.sciencemag.org/content/334/6060/1226</a></small>
+				    <aside class="notes">
+				        One aim of the reproducibility standard is to fill the gap in the scientific evidence-generating process between full replication of a study and no replication. Between these two extreme end points, there is a spectrum of possibilities, and a study may be more or less reproducible than another depending on what data and code are made available
+
+				         Software is science, in the sense that when developed in the
+				         course of computational science research, it can't be classified as "infrastructure" or "support". If a telescope is infrastructure for astronomy, then its equivalent or computational mathematics is a supercomputer. On the other hand, code produced to prove a theorem, simulate an explosion or study an image denoising algorithm is the subject-matter of the science being investigated.
+
+				        We need this work to be recognized and time and effort invested in it must be rewarded by scholarship standards. On the other hand, when science is based on software foundations, the computational part of the research should be subject to validation by the scientific method. This implies that every program used in the elaboration of a research paper should, at least, be usable by referees, and if possible be publicly available is source form. Open Source software is part of the equation, but it is not sufficient to answer the questions raised here.
+
+				    </aside>
+				</section>
+
+				<section>
+					<h3>Possibili argomenti di discussione per un miglioramento del data management</h3>
+					<ul>
+						<li>Data Policy
+						<li>Applicazione di standard internazionali aperti
+						<li>Data Management Plans
+						<li>Licenze standard
+						<li>Strumenti condivisi per:
+							<ul>
+								<li>archiviazione dati
+								<li>sviluppo scientifico (software, articoli, ...)
+								<li>condivisione dati
+							</ul>
+						<li>Infrastruttura IT
+						<li>Personale
+					</ul>
+				</section>
+
+				<section>
+					<h3>Data Policy</h3>
+					<ul>
+						<li>Necessità di avere data policies standard
+						<li>Non solo accesso
+							<ul>
+								<li>Riuso in ambito scientifico
+								<li>Riuso anche da parte di amministrazioni e soggetti economici (e.g. Smart, Sustainable, Inclusive Growth)
+							</ul>
+						<li>Machine-to-machine (TDM: Text and Data Mining)
+					</ul>
+				</section>
+
+				<section>
+					<h3>Data policy RITMARE</h3>
+					<small><a href="https://dx.doi.org/10.6084/m9.figshare.1235546">https://dx.doi.org/10.6084/m9.figshare.1235546</a></small>
+					<img height="500" src="img/DP_RITMARE.png" alt="Data policy RITMARE"/>
+				</section>
+
+				<section>
+					<h3>Licenze Creative Commons</h3>
+					<small><a href="http://creativecommons.org/">http://creativecommons.org/</a></small>
+				  <img src="img/degreesofopenness.jpg"/>
+				  <small><aa href="http://opencontent.uct.ac.za/What-is-a-Creative-Commons-license">http://opencontent.uct.ac.za/What-is-a-Creative-Commons-license</a></small>
+				</section>
+
+
+				<section>
+					<h3>Dall'Atlante della Laguna all'MSP: esperienze di data management in sistemi standard aperti</h3>
+					<span xmlns:cc="http://creativecommons.org/ns#"
+					property="cc:attributionName">by A. Sarretta, S. Menegon</span>
+					is licensed under a <a rel="license"
+							 href="http://creativecommons.org/licenses/by/4.0/">Creative
+						Commons Attribuzione 4.0 International
+						License</a>.
+					<br/>
+					<a rel="license"
+						 href="http://creativecommons.org/licenses/by/4.0/">
+						<img alt="Licenza Creative Commons"
+					 style="border-width:0"
+					 src="img/cc_by-88x31.png" />
+					</a>
+			  </section>
+
+			</div>
+		</div>
+
+		<script src="../reveal.js-master/lib/js/head.min.js"></script>
+		<script src="../reveal.js-master/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal.js-master/plugin/markdown/marked.js' },
+					{ src: '../reveal.js-master/plugin/markdown/markdown.js' },
+					{ src: '../reveal.js-master/plugin/notes/notes.js', async: true },
+					{ src: '../reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
