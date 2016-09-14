@@ -1,0 +1,612 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>From data to wisdom</title>
+
+		<link rel="stylesheet" href="../reveal.js-master/css/reveal.css">
+<!--		<link rel="stylesheet" href="css/theme/black.css">-->
+		<link rel="stylesheet" href="../reveal.js-master/css/theme/white.css">
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal.js-master/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js-master/css/print/pdf.css' : '../reveal.js-master/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<!-- ************************************************** -->
+
+				<section data-background="./images/firstSlide.jpg">
+					<h3 style="color:black">From data to wisdom: informing MSP and EUSAIR implementation in the Adriatic Ionian Region</h3>
+					<p style="color:white">
+						<br>
+						<br>
+						<small>
+							Alessandro Sarretta, Chiara Venier, Andrea Barbanti, Stefano Menegon, Daniel Depellegrin
+							<br>
+							(CNR-ISMAR)
+						</small>
+					</p>
+					<small>
+					<a href="mailto:alessandro.sarretta@ismar.cnr.it">alessandro.sarretta@ismar.cnr.it</a>
+					<br>
+					Twitter: <a href="https://twitter.com/tools4msp">@Tools4MSP</a>
+					</small>
+					<br>
+					<br>
+					<small><i  style="color:white">The role of Marxan in multi-objective Marine Spatial Planning:Building capacity to ADRIATIC+
+					<br>
+						5 th to 9 th of September, 2016 - Veli Lošinj, Croatia</i></small>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+
+				<section>
+					<h3>MSP as a challenge for science-to-policy</h3>
+						<div style="float: left; width: 55%;">
+							<img style="width: 100%;border: 0;" src="./images/wisdom.png" alt="DIKW: the Knowledge Hierarchy">
+						</div>
+						<div style="float: right; width: 45%;">
+							<p>Knowledge needed as:</p>
+							<ul>
+								<li>Conceptual and methodological approaches
+								<li>Knowledge of system functioning at different spatial scales and with time
+								<li>Data and tools to support decisions
+							</ul>
+						</div>
+				</section>
+
+				<section>
+					<blockquote>
+						&ldquo;MSP is a practical way to create and establish a more <b style="color:red">rational organization of the use of marine space</b> and the <b style="color:red">interactions between its uses</b>, to balance demands for development with the need to <b style="color:red">protect marine ecosystems</b>, and to achieve social and economic objectives in an open and <b style="color:red">planned way</b>.&rdquo;
+					</blockquote>
+					<i><small><a href="http://www.unesco-ioc-marinesp.be/msp_guide">Ehler and Douvere, 2009</a></small></i>
+				</section>
+
+  			</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h2><img src="images/logoISMAR.jpg" width="100" style="border: 0;float:right">Why ISMAR is interested and involved in MSP</h2>
+					<ul>
+						<li>ISMAR has multiples science competences:
+							<ul>
+								<li>Ecology/Biology
+								<li>Oceanography
+								<li>Modelling
+								<li>Geology
+								<li>Data management
+							</ul>
+						<li>"Vertical" in-depth knowledge
+						<li>"Horizontal" integration
+					</ul>
+					<p class="fragment"><img height=100 src="./images/logoCORILA.png" alt="Logo CORILa"> <img height=100 src="./images/logoIUAV.jpg" alt="Logo IUAV"></p>
+					<aside class="notes">
+					<small>“MSP group at CNR-ISMAR: currently developing and consolidating knowledge and tools for supporting the implementation of the MSP framework required by the European MSP Directive 2014/89/UE “ A framework for Maritime Spatial Planning”, where Member State need to establish and implement a maritime spatial plan by 2021, guiding in this way decision-makers towards scientifically based scenarios for the allocation of maritime uses.
+					CNR-ISMAR started working on these issues since 2012, in a cross-sectorial way, integrating competences related to all fields of oceanography (physical, chemical, biological) to more-technological skills, concerning for example the observational systems and interoperable systems for the management of data and information.”
+					</small>
+					</aside>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<hx3>Past, current and future projects</h3>
+					<small>
+					<table>
+						<tr>
+							<th>PROJECT</th>
+							<th>TOPIC</th>
+						</tr>
+						<tr>
+							<td>ADRIPLAN (DG MARE) finished</td>
+							<td>Transboundary implementation of MSP in AIR</td>
+						</tr>
+						<tr>
+							<td>RITMARE IV (Italian Ministry of Research and Education funds) ongoing</td>
+							<td>Development of tools for MSP; MSP for EUSAIR implementation</td>
+						</tr>
+						<tr>
+							<td>MUSES (H2020 programme CSA) -starting on 1st October 2016</td>
+							<td>Multi-use in European Seas</td>
+						</tr>
+						<tr>
+							<td>BLUEMED CSA (H2020 programme) starting</td>
+							<td>Research Agenda on Blue Growth-MSP</td>
+						</tr>
+						<tr>
+							<td>JPI OCEANS JOINT ACTION ongoing</td>
+							<td>Research Agenda on Blue Growth-MSP</td>
+						</tr>
+						<tr>
+							<td>SUPREME, SIMWESTMED (call EASME)</td>
+							<td>Support to MSPD implementation in the Mediterranean Sea</td>
+						</tr>
+						<tr>
+							<td>PORTODIMARE (Adrion programme) under evaluation</td>
+							<td>Development of tools for MSP</td>
+						</tr>
+						<tr>
+							<td>CO-EVOLVE (MED programme) under evaluation</td>
+							<td>Coastal and maritime tourism</td>
+						</tr>
+						<tr>
+							<td>MANTIS (DG MARE) ongoing</td>
+							<td>Sustainable fishery</td>
+						</tr>
+						<tr>
+							<td>AMARE (Med programme) under evaluation</td>
+							<td>Marine Protected Areas</td>
+						</tr>
+					</table>
+					</small>
+
+					<aside class="notes">
+						The “MSP CNR-ISMAR group”, thanks to the past project Adriplan, the on going project RITMARE and the project MUSES (H2020-BG-03-2016 - Multi use of Oceans) in the process to start soon (there also a number of proposal submitted on that topic, currently under evaluation), has acquired in-depth knowledge on the state of the art and on the main experiences developed in European and non-European countries, on the methodologies to be adopted, on the data and information required, on the key data analysis tools for the MSP and the techniques for stakeholders involvement, as well as has been developing analysis and planning proposals relating to the Adriatic-Ionian Region.
+						In the recent years the “MSP CNR-ISMAR group” has been focused in particular on the development of decision support tools, integrating and using the best available data and knowledge.
+					</aside>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+				    <h3>ADRIPLAN project <img width="200" style="border:0"  src="images/logoADRIPLAN_Title.jpg"> </h3>
+						<i>ADRiatic Ionian maritime spatial PLANning</i>
+						(<a href="http://www.adriplan.eu">www.adriplan.eu</a>)
+				    <br>
+						<br>
+						<div style="float: left; width: 25%;">
+				        <img style="width: 100%;border: 0;" src="images/adriplan_project.png" alt=""/>
+				    </div>
+				    <div style="float: right; width: 70%;">
+				        <ul>
+				            <li>EU funded project to develop MSP in the Adriatic-Ionian Macroregion</li>
+				            <li>December 2013 - July 2015</li>
+				            <li>Transboundary (4 countries: Croatia, Italy, Slovenia, Greece), 8 Scientific Partners and 9 Institutional Partners, 17 observers</li>
+				        </ul>
+				    </div>
+				    <ul>
+							<li>Proposals and recommendations for an operational cross-border MSP process
+				    </ul>
+
+				    <aside class="notes">
+				    </aside>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+
+				<section>
+					<h3>ADRIPLAN methodology</h3>
+					<p>
+						Guideline to be replicated for other MSP case studies in the AIR and Mediterranean area of study, to be adapted at different scale
+					</p>
+					<img style="width: 30%;border: 0;" src="images/methodology.png" alt=""/>
+
+					<aside class="notes">
+						Setting up of ADRIPLAN methodology, which can be adopted also for future initiatives and projects.
+						The methodology consists of 5 main phases: Pre-planning, Vision&Objectives, Analysis, Interpretation and Design.
+						After an initial assessment performed in the Pre-Planning, the Vision allows for the definition of Strategic and Planning Objectives, that will be used in the Interpretation phase to elaborate the results coming from the Analysis on uses of maritime space, performed on the baseline conditions and exploratory scenarios.
+						The Analysis considers in particular coexistence and compatibility among uses, cumulative impacts and socio-economic analyses.
+						The results from the Interpretation phase, which includes also environmental assets and their sensitivities, are used as input to the Design phase, where the Strategic Planning proposal and identification of pilot actions are performed.
+					</aside>
+				</section>
+
+				<section>
+						<img style="width: 60%;border: 0;" src="images/methodology.png" alt=""/>
+				</section>
+
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+
+				<section>
+					<h2>Main outputs</h2>
+					<ul>
+						<li>Methodological framework
+						<li>Initial Assessment for the AIR
+						<li>Analysis of coexistence and compatibility among uses, cumulative impacts, socio-economic analysis for the AIR and the two Focus Areas
+						<li>Strategic Plan for the Adriatic-Ionian Macroregion
+						<li>Portfolio of Actions for the Focus Areas
+						<li>Stakeholders involvement
+						<li class="fragment highlight-red">Interoperable Geospatial Data Portal for MSP and Adriplan Data Policy document
+						<li class="fragment highlight-red">Tools4MSP (Conflict Scores and Cumulative Impacts)
+					</ul>
+				</section>
+
+				<section>
+					<h3>Open access archived ADRIPLAN reports</h3>
+					<ul>
+						<li>Lipizer, Marina et al.. (2014). ADRIPLAN Data Policy. Zenodo. <a href="http://dx.doi.org/10.5281/zenodo.50862">10.5281/zenodo.50862</a>
+						<li>Barbanti, Andrea et al. (2015). ADRIPLAN Conclusions and Recommendations: A short manual for MSP implementation in the Adriatic-Ionian Region (English edition). Zenodo. <a herf="http://dx.doi.org/10.5281/zenodo.49190">10.5281/zenodo.49190</a>
+						<li>Barbanti, Andrea et al.. (2015). Developing a Maritime Spatial Plan for the Adriatic Ionian Region. Zenodo. <a href="http://dx.doi.org/10.5281/zenodo.48231">10.5281/zenodo.48231</a>
+					</ul>
+				</section>
+
+				<section data-background-image="./images/synt_envprot.png" data-background-size="600px">
+					<div style="background-color: rgba(200, 200, 200, 0.5); color: black; padding: 20px; border-radius: 25px;">
+						<h2>Synthesis map of environmental protection</h2>
+					</div>
+				</section>
+
+				<section data-background-image="./images/strategic_zoning.png" data-background-size="600px">
+					<div style="background-color: rgba(200, 200, 200, 0.5); color: black; padding: 20px; border-radius: 25px;">
+						<h2>Strategic zoning for the Adriatic Ionian Region</h2>
+					</div>
+				</section>
+
+				<section data-background-image="./images/pilotAction.png" data-background-size="600px">
+					<div style="background-color: rgba(200, 200, 200, 0.5); color: black; padding: 20px; border-radius: 25px;">
+						<h2>Pilot action for Focus Area 1</h2>
+					</div>
+				</section>
+
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+				    <h3>Adriplan Data Portal</h3>
+						<p><a href="http://data.adriplan.eu">http://data.adriplan.eu</a></p>
+
+						<div style="float: left; width: 45%;">
+							<img style="width: 100%;border: 0;" src="images/dataPortal_home.png" alt=""/>
+						</div>
+						<div style="float: right; width: 55%; vertical-align:middle">
+							<small>
+								<ul>
+									<li>Collecting and making available MSP data in ADRIPLAN
+									<li>Tool to be used by partners collaboratively for:
+										<ul>
+											<li>Discover, view and access available data through metadata
+											<li>Create maps merging available data
+											<li>Download data to be used in the project
+											<li>Populate the data portal with new data
+										</ul>
+									<li>Incremental implementation during the project
+									<li>User (group) profiles to customize interaction and availability of data
+									<li>Opensource tools: modular and extensible for development of specific functionalities
+								</ul>
+							</small>
+						</div>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+				    <h3>Adriplan Data Portal - What's inside</h3>
+				    <ul>
+			        <li>~150 vector layers (points, lines,areas)
+							<li>~50 rasters layers (images, models, interpolations)
+							<li>~60 maps (combination of layers)
+							<li>Other hundreds of layers through standard OGC-services
+							<li>~60 users
+				    </ul>
+				    <img style="height: 300px;border: 0;" src="images/dataPortal_dataSources.png" alt=""/>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section data-background-image="images/piwik.png" data-background-size="95%">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h3>Data portal access and use statistics</h3>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+
+				<section>
+					<h3>Our focus: tools supporting MSP</h3>
+					<ul>
+						<li>Moving from data inventory, to integration within the ADRIPLAN methodology, to supporting tool for MSP planning
+						<li>Use, customization, development, integration in the Portal
+					</ul>
+					<img src="images/tools4msp.png" width=60%>
+				</section>
+
+				<section>
+				    <h3>Types of MSP tools</h3>
+
+				    <p>Identifying spatial interactions between activities<br/>
+				        Risk assessment of cumulative effects of human pressures<br/>
+				        Decision support systems
+				    </p>
+				    <hr/>
+				    <p>Web-based vs. GIS-based tools</p>
+				    <hr/>
+				    <p>Designed for different users (programmer, scientist, strategic planner, case officer, public),</p>
+				    <hr/>
+				    <p>To address  different stages of the plan</p>
+				</section>
+
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+			    <h3>Tools4MSP</h3>
+					<table>
+						<tr>
+							<td>
+					<div style="float: left; width: 55%;">
+						<img style="width: 100%;border: 0;" src="images/architecture.png" alt=""/>
+					</div>
+					<div style="float: right; width: 45%; vertical-align:middle">
+						<small>
+							<ul>
+								<li>Collecting and making available MSP data in ADRIPLAN
+								<li>Tool to be used by partners collaboratively for:
+									<ul>
+						        <li>GeoNode plugin (python)</li>
+						        <li>Direct interaction with stored data</li>
+						        <li>The users can build several scenarios (called Case Studies) by choosing the analysis area, the data layers, the analysis grid cell</li>
+						        <li>The output includes: geographical layers, raw data,
+					            base statistics and graphs</li>
+						        <li>The spatial outputs from each run are automatically saved and
+					            published through the portal</li>
+							    </ul>
+							</ul>
+						</small>
+					</div>
+				</td>
+				</tr>
+				<tr>
+					<td>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"><small>
+						&ldquo;Stefano Menegon et al. 2016. Open source tools to support Integrated Coastal Management and Maritime Spatial Planning. DOI: <a href="https://doi.org/10.7287/peerj.preprints.2245v1&rdquo">10.7287/peerj.preprints.2245v1</a></small>
+					</blockquote>
+				</td>
+				</tr>
+					</table>
+
+			    <aside class="notes">
+		        Case Study concept. It allows users to configure a
+		        simulation through a graphical interface: to choose the area
+		        of analysis, the grid cell size (hexagonal grid), to define
+		        the geographical resources (layers) to be used to model the
+		        different phenomena which can be, depending on the context,
+		        uses and activities or environmental components.  Each user
+		        can create more "Case Studies" and compare the results.
+
+		        The outputs from each run on “Case Studies” are
+		        automatically saved as “geographical layers” and published
+		        through the portal. The layer created is initially
+		        accessible only for admin users but it is possible to modify
+		        the access rules to allow the access also for other
+		        registered or non-registered users.
+
+		        For each "Case Study" a summary page is available that lists
+		        general information (e.g.  cells number, total score). In
+		        the next semester this information will be integrated with
+	        	graphs and statistics automatically generated starting from
+				    the results of analyses.
+				  </aside>
+				</section>
+
+				<!-- ************************************************** -->
+
+				<section>
+			    <h3>Tool4MSP - Cumulative impact</h3>
+				  <p>
+			      Identify areas in the marine space where the environmental
+			      components are more exposed to anthropogenic pressures
+			  	</p>
+				  <ul>
+			      <li>Activities and uses (e.g. Maritime transport) </li>
+			      <li>Environmental components (e.g. Marine mammals)</li>
+			      <li>Pressures (e.g. Underwater noise)</li>
+			      <li>Sensitivities: the sensitivity of each environmental component to each pressure generated by a maritime use</li>
+				  </ul>
+				  <p><small>firstly introduced by Halpern et al. (2008) at global
+				      			scale, then implemented in several Marine Regions
+								    (Mediterranean by Micheli et al. (2013), Baltic Sea by
+								    (Korpinen et al., 2013), and North Sea (Andersen et al., 2013)).
+					</small></p>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section data-background-image="images/cumulative_impact_schema.png" data-background-size="contain">
+				  <aside class="notes">
+				  </aside>
+				</section>
+
+
+<!-- ************************************************** -->
+
+				<section>
+					<h4>Extended data and visual reports</h4>
+					<img src="images/tools4msp_visual.png" style="border:0">
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h4>Marxan implementation to the Adriatic-Ionian Region</h4>
+					<img src="images/marxanAIR.png" style="border:0" width=800>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h4>when, where and why we use Marxan?</h4>
+					<img src="images/whenwherewhy.png" style="border:0">
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h4>PROPOSED FRAMEWORK for the Adriatic-Ionian region case study</h4>
+					<div style="float: left; width: 70%;">
+						<p align="left" style="font-size:20px">adapted from Mazor et al., 2014. The Crowded Sea: Incorporating Multiple Marine Activities in Conservation Plans Can Significantly Alter Spatial Priorities. PLoS ONE 9, DOI: <a href="http://dx.plos.org/10.1371/journal.pone.0104489">10.1371/journal.pone.0104489</a></p>
+					</div>
+					<div style="float: right; width: 30%;">
+						<img width="300" style="border:0"  src="images/mazor.png">
+					</div>
+					<small>
+					<ul>
+						<li>STEP 1= description of the study area in different scales and relative main issues (on the basis of Adriplan results, issues, priorities and needs), answering to the need to apply systematic approaches at various scales (Giakoumi et al., 2012)
+						<li>STEP 2= definition of the aim of the analysis to be realized carrying out different case studies (on conservation protection and on major economic marine activities for the area)
+						<li>STEP 3= definition of conservation features, costs, targets for each case study
+						<li>STEP 4= collecting and pre-processing data layers for creating the input datasets
+						<li>STEP 5= implementation of the spatial prioritization tool: running Marxan for the different case studies on different domains
+						<li>STEP 6=evaluate trade-offs/development of planning scenarios to discuss with stakeholders
+						<li>STEP 7= rerun with different targets
+						<li>STEP 8= final portfolio of planning scenarios ready for discussion with decision-makers. The final plans will meet biodiversity targets; will achieve economic objectives, while minimize costs.
+					</ul>
+					</small>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section data-background-image="images/aim_grey.jpeg" data-background-size="contain">
+					<h3>Study area</h3>
+					<h4>Domain 1 Adriatic-Ionian Region</h4>
+					<h4>Domain 2 Italian side of the AIR</h4>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section data-background-image="images/RER_grey.jpeg" data-background-size="contain">
+					<h3>Study area</h3>
+					<h4>Domain 3 Marine waters of Emilia Romagna Region</h4>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h3>General aim of the analysis</h3>
+					<p align="left" style="font-size:30px">On the basis of the peculiarities of the AIR (EUSAIR pillars), the following priorities, both in terms of environmental protection and socio-economy productivity, have been identified for the areas of study:</p>
+					<ul style="font-size:30px">
+						<li><b>Protection of the environment</b>: in line with MSFD (e.g. protecting at least 10% of the seabed is currently exploited by trawling) and Biodiversity Convention (increasing the 10% of marine areas);
+						<li><b>Sustainable development of aquaculture</b> (also focusing on the proposal for new offshore areas between 3nm and 12 nm);
+						<li><b>Sustainable development of fisheries</b> (both commercial and artisanal);
+						<li><b>Sustainable development of tourism</b>: guaranteed by the previous 3 points as well as preserving transport and sand deposits activities (specific activity for the Emilia Romagna region), as important activities of the area.
+					</ul>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h3>Specific aim of the analysis</h3>
+					<p align="left">Specific objectives will be achieved by developing specific case studies:<p>
+					<div style="float: left; width: 55%; vertical-align:middle">
+						<ul>
+							<li>Identifying priority areas to design <b>networks of MPAs</b> for biodiversity conservation;
+						</ul>
+						<br>
+						<br>
+						<ul>
+							<li>Identifying priority areas to design <b>aquaculture farms</b>, favouring in particular offshore sites.
+						</ul>
+					</div>
+					<div style="float: right; width: 45%;">
+						<img style="width: 100%;border: 0;" src="images/aimAnalysis.png" alt=""/>
+					</div>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<section>
+						<h4>Conservation features 1</h4>
+						<img src="images/consFeatures1.png" style="border:0">
+					</section>
+					<section>
+						<h4>Conservation features 2</h4>
+						<img src="images/consFeatures2.png" style="border:0">
+					</section>
+					<section>
+						<h4>Conservation features 3</h4>
+						<img src="images/consFeatures3.png" style="border:0">
+					</section>
+					<section>
+						<h4>Costs</h4>
+						<img src="images/costs.png" style="border:0">
+					</section>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+					<h3>Lessons we are learning on the use of Marxan</h3>
+					<ul style="font-size:30px">
+						<li>stakeholders/expert involvement for the finalization of the problem, the observation of specific data/thresholds, and in-depth literature review
+						<li>consider the time required to observe and elaborate data (pre-processing phase)
+						<li>importance of a tool for data collection and management (Adriplan Data Portal)
+						<li>need for a clear definition of the problem and of the goals (it was useful to start from the Adriplan experience, as well as to adopt the workflow of Mazor et al., 2014)
+						<li>different approach for the biodiversity conservation and aquaculture analyses
+					</ul>
+				</section>
+
+<!-- ************************************************** -->
+
+				<section>
+				    <h3>From data to wisdom: informing MSP and EUSAIR implementation in the Adriatic Ionian Region</h3>
+						<small>
+						<span xmlns:cc="http://creativecommons.org/ns#"
+				          property="cc:attributionName">by A. Sarretta, C. Venier, A. Barbanti, S. Menegon, D. Depellegrin</span>
+				    is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative 				        Commons Attribution 4.0 International License</a>.
+
+				    <br/>
+				    <a rel="license"
+				       href="http://creativecommons.org/licenses/by/4.0/">
+				        <img alt="Licenza Creative Commons" style="border-width:0" src="images/by.png" width=150/>
+				    </a>
+						<p>It can be viewed online <a href="http://alesarrett.github.io/presentations/20160905_ISMARMSP_Losinj/index.html">here</a> and downloaded <a href="https://dx.doi.org/10.6084/m9.figshare.3806703">here</a>.</p>
+						<p>To cite this work please refer to:
+						<br>
+						<blockquote>
+							&ldquo;Alessandro Sarretta, Chiara Venier, Andrea Barbanti, Stefano Menegon, Daniel Depellegrin (2016). From data to wisdom: informing MSP and EUSAIR implementation in the Adriatic Ionian Region. DOI: <a href="https://dx.doi.org/10.6084/m9.figshare.3806703">10.6084/m9.figshare.3806703</a>
+						</blockquote>
+						</small>
+						</section>
+
+<!-- ************************************************** -->
+
+			</div>
+		</div>
+
+		<script src="../reveal.js-master/lib/js/head.min.js"></script>
+		<script src="../reveal.js-master/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal.js-master/plugin/markdown/marked.js' },
+					{ src: '../reveal.js-master/plugin/markdown/markdown.js' },
+					{ src: '../reveal.js-master/plugin/notes/notes.js', async: true },
+					{ src: '../reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
