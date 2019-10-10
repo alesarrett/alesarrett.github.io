@@ -6,19 +6,19 @@
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="../reveal.js/css/reset.css">
+		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="../reveal.js/lib/css/monokai.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.type = '../reveal.js/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -33,7 +33,7 @@
 					<h4>and the role of marine and maritime science</h4>
 					<br>
 					<small>Alessandro Sarretta <br>
-						(CNR-ISMAR/IRPI)
+						(CNR-IRPI)
 					</small>
 				</section>
 
@@ -47,21 +47,21 @@
 
     <!-- sub slide -->
 
-					<section data-background="../img/mspSketch.png" data-background-size="90%">
+					<section data-background="./img/mspSketch.png" data-background-size="90%">
 						<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
 							<h3>Many environmental and economic themes and interconnections</h3>
 						</div>
 					</section>
 
-					<section data-background="../img/multiScalar.png" data-background-size="90%">
+					<section data-background="./img/multiScalar.png" data-background-size="90%">
 						<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
 							<h3>Different temporal and spatial scales</h3>
 						</div>
 					</section>
 
-					<section data-background="../img/complexProcess.png" data-background-size="90%">
+					<section data-background="./img/complexProcess.png" data-background-size="90%">
 						<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
-							<h3>Process complex, variable and adaptable</h3>
+							<h3>Complex, variable and adaptable process</h3>
 						</div>
 					</section>
 
@@ -72,25 +72,25 @@
         <section>
 
 					<section>
-						<h2>What data MSP needs?</h2>
+						<h2>Which data MSP needs?</h2>
 					</section>
 
     <!-- sub slide -->
 
       		<section>
 						<h3>We are flooded with data</h3>
-					  <div style="float: left; width:50%;">
-							<img data-src="../img/dataDeluge.jpeg" style="float:left">
+					  <div style="float: left; width:45%;">
+							<img data-src="./img/dataDeluge.jpeg" style="float:left">
 						</div>
-						<div style="float: right; width: 50%;">
+						<div style="float: right; width: 55%; font-size: 40px;">
 						<h4>... but data can be</h4>
 							<ul>
 								<li>not fit-for-purpuse
 								<li>not updated
 								<li>irrelevant
 								<li>badly documented
-								<li>non official
-								<li>good, detailed and updated data is sometimes lacking
+								<li>non official/validated
+								<li>sometimes good, detailed and updated data is lacking
 							</ul>
 						<span class="fragment">... and it is never enough!</span>
 						</div>
@@ -98,7 +98,7 @@
 
     <!-- sub slide -->
 
-					<section data-background="../img/topicCategories.png" data-background-size="90%">
+					<section data-background="./img/topicCategories.png" data-background-size="90%">
 		  			<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
 	  					<h3>Uses and environmental information categorization</h3>
 							<h3 class="fragment">... and prioritization</h3>
@@ -118,33 +118,32 @@
 
     <!-- sub slide -->
 
-		<section>
-						<h3>Portals, databases, catalogues</h3>
-							<img data-src="../img/emodnet.png" height="200">
-						<ul>
-							<li>Institutionals
-								<ul>
-									<li>EC, EEA, national MSP portals
-							  </ul>
-							<li>Institutions, NGOs, public initiatives
-								<ul>
-									<li>EMODnet, Atlas of the Sea, WWF, FAO, ...
-								</ul>
-							<li>Research projects
-								<ul>
-									<li>SHAPE, ADRIPLAN, PORTODIMARE
-								</ul>
-            </ul>
+					<section data-background="./img/emodnet.png">
+						<div style="position: absolute; width: 100%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px; font-size: 35px; text-align: left;">
+							<h3>Portals, databases, catalogues</h3>
+							<ul>
+								<li>Institutional
+									<ul>
+										<li>EC, EEA, national MSP portals
+								  </ul>
+								<li>Institutions, NGOs, public initiatives
+									<ul>
+										<li>EMODnet, Atlas of the Sea, WWF, FAO, ...
+									</ul>
+								<li>Research projects
+									<ul>
+										<li>SHAPE, ADRIPLAN, PORTODIMARE
+									</ul>
+								<li>Private/Business(?)
+	            </ul>
+						</div>
 					</section>
 
     <!-- sub slide -->
 
-	      	<section>
+					<section data-background="./img/pdm-t4m_.png">
+						<div style="position: absolute; width: 100%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px; font-size: 35px; text-align: left;">
 						<h3>ADRIPLAN, SUPREME, PORTODIMARE</h3>
-						<div style="float: left; width:45%;">
-						  <img data-src="../img/pdm-t4m.png">
-					  </div>
-						<div style="float: left; width:55%;">
 							<ul>
 								<li>Long-term vision and commitment
 								<li>Interaction between national/regional authorities and research community
@@ -166,11 +165,11 @@
     <!-- sub slide -->
 
 					<section data-background-iframe="http://catalogue.msp-supreme.eu/dataset/defense-work-emilia-romagna-region-opere-difesa-2014-rer" data-background-interactive>
-						<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
-							<h3>Metadati</h3>
+						<div style="position: absolute; width: 45%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px; font-size: 30px; text-align: left;">
+							<h3>Metadata</h3>
 							<ul>
-								<li>importanza
-								<li>criticità
+								<li>importance: to understand the content, deeper knowledge (lineage, procedures), attribution
+								<li>critical issues: lack of care/quality on metadata, update
 							</ul>
 			  	  </div>
 					</section>
@@ -187,9 +186,9 @@
 
     <!-- sub slide -->
 
-					<section data-background="../img/permission-required.jpg" data-background-size="90%">
+					<section data-background="./img/permission-required.jpg" data-background-size="90%">
 						<div style="position: absolute; width: 100%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px;">
-							<p>Open access<span class="fragment"> (?)</span></p>
+							<p>Access<span class="fragment"> (open?)</span></p>
 							<p><span class="fragment">Permissions</span></p>
 							<p><span class="fragment">Licenses</span></p>
 					  </div>
@@ -207,13 +206,13 @@
 
     <!-- sub slide -->
 
-					<section data-transition="none" data-background="../img/mspChallenge.png" data-background-size="70%">
+					<section data-transition="none" data-background="./img/mspChallenge.png" data-background-size="70%">
 		  			<div style="position: absolute; width: 70%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.75); color: #fff; padding: 30px; font-size: 35px; text-align: left;">
 							<h3>Tools</h3>
 							<ul>
 								<li>for discovery, visualization, download
 									<ul>
-										<li>portals
+										<li>portals, catalogues
 								  </ul>
 								<li>for interaction, participation, planning
 									<ul>
@@ -221,21 +220,21 @@
 									</ul>
 								<li>for integration, analysis
 									<ul>
-										<li>Tools4MSP, integrated modules di PORTODIMARE
+										<li>Tools4MSP, integrated modules in PORTODIMARE
 									</ul>
 	            </ul>
 						</div>
 					</section>
 
 
-					<section data-background="../img/tools4msp_.png" data-background-size="90%">
+					<section data-background="./img/tools4msp_.png" data-background-size="90%">
 						<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
 							<h3>Tools4MSP Geoplatform</h3>
 							<a><href="http://tools4msp.eu/">http://tools4msp.eu/</a>
 			  	  </div>
 					</section>
 
-					<section data-background="../img/pdm.png" data-background-size="90%">
+					<section data-background="./img/pdm.png" data-background-size="90%">
 						<div style="position: absolute; width: 50%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 30px; font-size: 25px; text-align: left;">
 							<h3>PORTODIMARE</h3>
 							<a><href="https://www.portodimare.eu/">https://www.portodimare.eu/</a>
@@ -254,14 +253,17 @@
 
     <!-- sub slide -->
 
-					<section>
-						<h3>Why is it important?</h3>
-						<ul>
-							<li>intedisciplinarity of the marine environment
-							<li>understanding/management of uncertainty
-							<li>complexity of marine uses
-							<li>expert judgment to support decision knowledge/making
-            </ul>
+					<section data-background="./img/sankey.png" data-background-size="90%">
+						<div style="position: absolute; width: 100%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 30px; font-size: 40px; text-align: left;">
+							<h3>Why is it important?</h3>
+							<ul>
+								<li>intedisciplinarity of the marine environment
+								<li>understanding/management of uncertainty
+								<li>complexity of marine uses
+								<li>scientific and technological improvements
+								<li>expert judgment to support decision knowledge/making
+	            </ul>
+						</div>
 					</section>
 
 				</section>
@@ -271,28 +273,53 @@
         <section>
 
 					<section>
-					  (ideal)
-						<h2>Workflow for and updated and efficient MSP data management</h2>
+						<h2>How to realize an updated and efficient MSP data management?</h2>
 					</section>
 
     <!-- sub slide -->
 
-      		<section data-background="../img/workflow.jpg" data-background-size="90%">
+      		<section data-background="./img/workflow.jpg" data-background-size="90%">
 						<div style="position: absolute; width: 100%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 30px; text-align: left;">
-						<ul>
-							<li>Need of official data from planning authorities
-							<li>Open sharing of data through standard and interoperable tools and services
-							<li>Explicit workflow for a shared, integrated and cross-border update of information
-            </ul>
+							<ul>
+								<li>identification of priority data to be manged for MSP
+								<li>official/validated data from responsible authorities
+								<li>open data sharing through standard and interoperable tools and services
+								<li>explicit workflow for a shared, integrated and cross-border update of information
+								<li>web portals for aggregation and tools for analysis
+	            </ul>
   					</div>
 					</section>
 
 				</section>
 
+				<!-- SLIDE -->
+
+				<section>
+				    <h3>Dati e strumenti per MSP e il ruolo delle scienze marine e marittime</h3>
+						<small>
+							<span xmlns:cc="http://creativecommons.org/ns#"
+					          property="cc:attributionName">by Alessandro Sarretta
+							</span>
+							<p>
+					     is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+						  </p>
+					    <a rel="license"
+					       href="http://creativecommons.org/licenses/by/4.0/">
+					        <img alt="Licenza Creative Commons" style="border-width:0" src="./img/by.png" width=150/>
+					    </a>
+							<p>It can be viewed online <a href="http://alesarrett.github.io/presentations/20191008_MSPGlobal/index.html">here</a> and downloaded <a href="">here</a>.</p>
+							<p>To cite this work please refer to:
+							<br>
+							<blockquote>
+								"Alessandro Sarretta (2019). Dati e strumenti per MSP e il ruolo delle scienze marine e marittime. DOI: <a href=""></a>
+							</blockquote>
+						</small>
+						</section>
+
 			</div>
 		</div>
 
-		<script src="js/reveal.js"></script>
+		<script src="../reveal.js/js/reveal.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -301,10 +328,10 @@
 			Reveal.initialize({
 				history: true,
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: '../reveal.js/plugin/markdown/marked.js' },
+					{ src: '../reveal.js/plugin/markdown/markdown.js' },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true }
 				]
 			});
 		</script>
